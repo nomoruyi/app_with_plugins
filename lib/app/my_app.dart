@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:app_with_plugins/plugins/p1/plugin_1.dart' deferred as p1;
+import 'package:app_with_plugins/plugins/plugin_one/plugin_one.dart' deferred as p1;
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -169,7 +169,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _navigateToPlugin() {
-    Navigator.of(context).push(MaterialPageRoute(builder: (context)=> p1.Plugin1()));
+    Navigator.of(context).push(MaterialPageRoute(builder: (context)=> p1.PluginOne()));
 
   }
 }
