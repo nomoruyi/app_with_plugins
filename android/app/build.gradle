@@ -24,7 +24,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace = "com.example.app_with_plugins"
+    namespace = "de.nomoruyi.app_with_plugins"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
