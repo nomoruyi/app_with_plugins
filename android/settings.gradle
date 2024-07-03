@@ -22,4 +22,5 @@ plugins {
     id "org.jetbrains.kotlin.android" version "1.7.10" apply false
 }
 
+include ":plugin_one"
 include ":app"

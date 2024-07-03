@@ -1,3 +1,5 @@
+
+
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file("local.properties")
 if (localPropertiesFile.exists()) {
@@ -19,7 +21,7 @@ if (flutterVersionName == null) {
 apply plugin: "com.android.dynamic-feature"
 
 android {
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 34
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -34,13 +36,16 @@ android {
     }
 
     defaultConfig {
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk = 21
+        targetSdk = 34
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
     }
 }
 
 dependencies {
-    implementation(project(":app"))
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(":app")
+//    implementation(project(":app"))
+    api 'androidx.test:core:1.2.0'
 }

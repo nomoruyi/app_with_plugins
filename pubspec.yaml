@@ -56,7 +56,7 @@ flutter:
   deferred-components:
     - name: plugin_one
       libraries:
-        - package:app_with_plugins/plugins/p1/plugin_one.dart
+        - package:app_with_plugins/plugins/plugin_one/plugin_one.dart
 
 
   # The following line ensures that the Material Icons font is

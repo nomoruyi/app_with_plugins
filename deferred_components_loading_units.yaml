@@ -25,4 +25,4 @@
 loading-units:
   - id: 2
     libraries:
-      - package:app_with_plugins/plugins/p1/plugin_1.dart
+      - package:app_with_plugins/plugins/plugin_one/plugin_one.dart
