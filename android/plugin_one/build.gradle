@@ -44,8 +44,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
+//    implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation project(":app")
 //    implementation(project(":app"))
-    api 'androidx.test:core:1.2.0'
+//    api 'androidx.test:core:1.6.1'
 }
